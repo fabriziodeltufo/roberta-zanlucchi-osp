@@ -211,9 +211,33 @@ hr {
     font-weight: normal;
 }
 
+/* ! LOGHI */
+@media (max-width: 768px) {
 
+    #chi-sono {
+        width: 100%;
+        height: 275px!important;
+        background-color: #9CD2C0;
+        padding: 0;
+    }
 
+    #chi-sono .grid{
+        display: block;
+        width: 70%;
+    }
 
+    #chi-sono .col-20{
+        width: 100%; 
+   }
+
+   .v-center {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center!important;
+}
+
+}
 
 
 /* ! SECTIONS */
