@@ -211,7 +211,7 @@
                         Sarà lieta di risponderti al più presto possibile.</p>
                 </div>
                 <div class="mt-2">
-                    <h2>Roberta Zanlucchi</h2>
+                    <h2 class="text-1">Roberta Zanlucchi</h2>
                     <p class="text-3">Loc. Brom,4 – 38060 Isera – TN<br>
                         TEL : +39 335 6986240<br>
                         EMAIL : zanlucchiroberta.tn@gmail.com</p>
@@ -231,9 +231,6 @@
     </div>
 
 
-
-
-
     <!-- JAVASCRIPT -->
     <script type="text/javascript">
 
@@ -244,7 +241,7 @@
         });
 
 
-        // HAMBURG SCROLL TO MENU
+        // SCROLLING MENU TO ID
         let links = document.querySelectorAll('.header__menu li a');
 
         links.forEach((link, i) => {
@@ -254,12 +251,15 @@
 
                 let selector = this.getAttribute("href");
                 let selectorElement = document.querySelectorAll(selector);
+                document.body.classList.toggle('menu-open');
 
-
+                
                 window.scroll({
                     top: selectorElement[0].offsetTop,
                     behavior: "smooth"
                 });
+
+
 
             });
 
