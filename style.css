@@ -106,11 +106,66 @@ hr {
 }
 
 
-
+/* ! HAMBURGER MENU */
 .header__hamburger {
     display: none;
 }
 
+@media (max-width: 768px) {
+
+    .header {
+        background: rgba(255, 255, 255, 0.95);
+    }
+
+    .header__hamburger {
+        display: block;
+        width: 40px;
+        height: 35px;
+        margin-top: 9px;
+        margin-right: 4px;
+    }
+
+    .header__hamburger span {
+        width: 33px;
+        height: 2px;
+        background: #000;
+        margin-top: 8px;
+        display: block;
+        transition: all 0.15s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .header__menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #9CD2C0;
+        border-bottom: 1px solid black;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    }
+
+    .header__menu li {
+        display: block;
+    }
+
+    .menu-open .header__hamburger span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    .menu-open .header__hamburger span:nth-child(2) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .menu-open .header__menu {
+        height: 30vh;
+    }
+
+    .menu-open {
+        overflow: hidden;
+    }
+}
 
 
 
@@ -158,6 +213,9 @@ hr {
 
 
 
+
+
+
 /* ! SECTIONS */
 .section-01 {
     background: #000;
@@ -193,11 +251,28 @@ hr {
 
 @media (max-width: 768px) {
 
-    .section-01 p {
-        max-width: 670px;
+    .section-01 .text-1 {
+        padding: 0 10px;
+        font-size: 1.5rem;
+        line-height: normal;
+        margin: 0;
     }
 
+    .section-01 .text-2 {
+        padding: 10px;
+        padding-top: 5px;
+        font-size: 1rem;
+    }
+
+    .section-01 p {
+        width: 300px;
+        margin-top: 0;
+    }
+
+    .section-02 .text-1{font-size: 24px;}
+    .section-02 .text-3{font-size: 16px;}
 }
+
 
 /* ! FOOTER */
 .footer {
@@ -213,10 +288,42 @@ hr {
     border: 1px solid white;
 }
 
+@media (max-width: 768px) {
+
+
+    #footer-img {
+        position: absolute;
+        bottom: 265px;
+        right: 20px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
+    .footer h2 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+}
+
+
+
 /* ! SOCKET */
 .socket {
     background-color: white;
-    color: black
+    color: black;
+}
+
+@media (max-width: 768px) {
+
+    .socket p {
+        font-size: 12px;
+    }
+
 }
 
 
@@ -518,20 +625,20 @@ ul {
     width: 100%;
     height: 70px;
     /* background: url(media/tavolo.jpg) center center; */
-    /* background-size:cover;  */  
+    /* background-size:cover;  */
     background-color: #9CD2C0;
     padding: 0;
 }
 
-#logo-me{
+#logo-me {
     width: 100%;
     height: 50px;
 }
 
-#logo-book{
+#logo-book {
     width: 50px;
     height: 50px;
-    
+
 }
 
 .pos-rel {

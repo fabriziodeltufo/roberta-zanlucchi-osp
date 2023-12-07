@@ -230,6 +230,48 @@
         <p class="text-center mb-0">Copyright &copy 2023 Roberta Zanlucchi. Tutti i diritti riservati</p>
     </div>
 
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript">
+
+        // HAMBURGER MENU TOGGLE
+        let hamburger = document.querySelector('.header__hamburger');
+        hamburger.addEventListener("click", function () {
+            document.body.classList.toggle('menu-open');
+        });
+
+
+        // HAMBURG SCROLL TO MENU
+        let links = document.querySelectorAll('.header__menu li a');
+
+        links.forEach((link, i) => {
+
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                let selector = this.getAttribute("href");
+                let selectorElement = document.querySelectorAll(selector);
+
+
+                window.scroll({
+                    top: selectorElement[0].offsetTop,
+                    behavior: "smooth"
+                });
+
+            });
+
+        });
+
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>
