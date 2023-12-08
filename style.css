@@ -231,7 +231,6 @@ hr {
 
 .text-0 {
     font-size: 4rem;
-    line-height: 1;
 }
 
 h1,
@@ -540,9 +539,7 @@ ul {
     width: 100%;
 }
 
-.lh-0 {
-    line-height: 0rem;
-}
+
 
 
 
@@ -556,6 +553,9 @@ ul {
         left: 30px;
     }
 
+    .section-04 .text-3{
+        font-size: 20px;
+    }
 
     /* footer */
     .footer .grid .col-40 {
@@ -695,6 +695,16 @@ ul {
         object-fit: cover;
     }
 
+    .section-04 .text-3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .section-04 .text-2 {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
 
     /* media-text */
     #media-text-03-quote {
@@ -715,8 +725,8 @@ ul {
 
     #footer-img {
         position: absolute;
-        bottom: 147px;
-        right: 90px;
+        bottom: 182px;
+        right: 40px;
         width: 200px;
         height: 200px;
         border: 1px solid white;
@@ -775,6 +785,13 @@ ul {
 /* ! 650 MEDIA QUERY */
 @media (max-width: 650px) {
 
+    #chi-sono {
+        width: 100%;
+        height: 313px !important;
+        background-color: #9CD2C0;
+        padding: 0;
+    }
+
 
     /* media-text */
     #media-text-03-quote {
@@ -790,14 +807,30 @@ ul {
     }
 
 
+    .footer .grid .col-40 {
+        width: 100%;
+    }
+
 }
 
 
 
 
 
-/* ! 500 MEDIA QUERY */
-@media (max-width: 500px) {
+/* ! 540 MEDIA QUERY */
+@media (max-width: 540px) {
+
+    .section-04 .text-2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .section-04 .text-3{
+        font-size: 18px;
+        text-align: center;
+    }
+
+   
 
     /* media-text */
     #media-text-03-quote {
@@ -814,15 +847,6 @@ ul {
 
 
     /* footer */
-    #footer-img {
-        position: absolute;
-        bottom: 229px;
-        right: 5px;
-        width: 150px;
-        height: 150px;
-        border: 1px solid white;
-    }
-
     .footer .grid {
         flex-wrap: wrap;
     }
@@ -847,14 +871,34 @@ ul {
 
 
 
-/* ! 375 MEDIA QUERY */
-@media (max-width: 375px) {
+/* ! 455 MEDIA QUERY */
+@media (max-width: 455px) {
 
+    .cover__content .text-0 {
+        font-size: 40px;
+
+    }
+
+    /* logo list */
     #chi-sono .grid {
         display: block;
         width: 45%;
     }
 
+    /* section-04 */
+    .section-04 .lh-0{
+        line-height: normal;
+    }
+
+    .section-04 .text-2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .section-04 .text-3{
+        font-size: 13px;
+        text-align: center;
+    }
 
     /* media-text */
     #media-text-03-quote {
@@ -873,31 +917,123 @@ ul {
 
 
     /* footer */
-    .footer .grid {
+    /* .footer .grid {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 5%;
         max-width: 1250px;
         margin: 0 auto;
-    }
+    } */
 
     #footer-img {
         position: absolute;
-        bottom: 229px;
-        right: 5px;
-        width: 150px;
-        height: 150px;
+        bottom: 263px;
+        right: 31px;
+        width: 100px;
+        height: 100px;
         border: 1px solid white;
     }
 
-    .footer .grid .col-40 {
+    /* .footer .grid .col-40 {
         width: 100%;
+    } */
+
+}
+
+/* ! 310 MEDIA QUERY */
+@media (max-width: 310px) {
+
+    #media-text-03-quote {
+        top: 30%;
+        left: 44px;
+    }
+
+    /* footer */
+    #footer-img {
+        position: absolute;
+        bottom: 281px;
+        right: 31px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
+    /* .footer .grid .col-40 {
+        width: 100%;
+    } */
+    .socket p {
+        font-size: 8px;
     }
 
 }
 
+/* ! 304 MEDIA QUERY */
+@media (max-width: 304px) {
 
+    #media-text-03-quote {
+        top: 20%;
+        left: 44px;
+    }
+
+    .section-04 .text-2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .section-04 .text-3{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* footer */
+    #footer-img {
+        position: absolute;
+        bottom: 308px;
+        right: 31px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
+    /* .footer .grid .col-40 {
+        width: 100%;
+    } */
+
+   
+
+}
+
+/* ! 248 MEDIA QUERY */
+@media (max-width: 248px) {
+
+    #media-text-03-quote p{
+        font-size: 16px;
+    }
+
+    #media-text-03-quote h4{
+        font-size: 11px;
+    }
+
+    /* footer */
+    #footer-img {
+        position: absolute;
+        bottom: 329px;
+        right: 31px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
+    .footer .text-3 {
+        font-size: 13px;
+    }
+
+    /* .footer .grid .col-40 {
+        width: 100%;
+    } */
+
+}
 
 /* ! ANIMATIONS */
 
