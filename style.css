@@ -184,6 +184,7 @@ hr {
 
 .section-04 #flowers {
     height: 950px;
+    object-fit: cover;
 }
 
 /* ! MEDIA TEXT */
@@ -475,16 +476,12 @@ ul {
 
 #footer-img {
     position: absolute;
-    bottom: 60px;
-    right: 130px;
-    width: 442px;
-    height: 442px;
+    bottom: 84px;
+    right: 84px;
+    width: 400px;
+    height: 400px;
     border: 1px solid white;
 }
-
-
-
-
 
 
 /* ! SOCKET */
@@ -802,7 +799,6 @@ ul {
 /* ! 500 MEDIA QUERY */
 @media (max-width: 500px) {
 
-
     /* media-text */
     #media-text-03-quote {
         max-width: 70%;
@@ -814,6 +810,15 @@ ul {
 
     #media-text-03-quote h4 {
         font-size: 16px;
+    }
+
+    #footer-img {
+        position: absolute;
+        bottom: 229px;
+        right: 5px;
+        width: 150px;
+        height: 150px;
+        border: 1px solid white;
     }
 
 
@@ -830,7 +835,7 @@ ul {
 
     #chi-sono .grid {
         display: block;
-        width: 40%;
+        width: 45%;
     }
 
 
