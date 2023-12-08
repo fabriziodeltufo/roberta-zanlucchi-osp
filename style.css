@@ -216,26 +216,26 @@ hr {
 
     #chi-sono {
         width: 100%;
-        height: 275px!important;
+        height: 275px !important;
         background-color: #9CD2C0;
         padding: 0;
     }
 
-    #chi-sono .grid{
+    #chi-sono .grid {
         display: block;
         width: 70%;
     }
 
-    #chi-sono .col-20{
-        width: 100%; 
-   }
+    #chi-sono .col-20 {
+        width: 100%;
+    }
 
-   .v-center {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center!important;
-}
+    .v-center {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center !important;
+    }
 
 }
 
@@ -275,8 +275,6 @@ hr {
 
 @media (max-width: 768px) {
 
- 
-
     .section-01 .text-1 {
         padding: 0 10px;
         font-size: 1.5rem;
@@ -295,8 +293,20 @@ hr {
         margin-top: 0;
     }
 
-    .section-02 .text-1{font-size: 24px;}
-    .section-02 .text-3{font-size: 16px;}
+    .section-02 .text-1 {
+        font-size: 24px;
+    }
+
+    .section-02 .text-3 {
+        font-size: 16px;
+    }
+
+    .section-04 #flowers {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
 }
 
 
@@ -316,7 +326,7 @@ hr {
 
 @media (max-width: 768px) {
 
-    .footer .col-40{
+    .footer .col-40 {
         padding: 0 10px;
     }
 
@@ -734,7 +744,7 @@ ul {
         max-width: 90%;
         top: 25%;
         /* right: 5%; */
-        left:40px;
+        left: 40px;
     }
 }
 
@@ -774,7 +784,7 @@ ul {
 
     #media-text-03-quote {
         top: 30%;
-        left:60px;
+        left: 60px;
     }
 
     #media-text-03-quote p {
