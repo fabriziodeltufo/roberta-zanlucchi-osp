@@ -649,7 +649,7 @@ ul {
 
     #chi-sono .grid {
         display: block;
-        width: 70%;
+        width: 25%;
     }
 
     #chi-sono .col-20 {
@@ -827,6 +827,11 @@ ul {
 
 /* ! 375 MEDIA QUERY */
 @media (max-width: 375px) {
+
+    #chi-sono .grid {
+        display: block;
+        width: 50%;
+    }
 
 
     /* media-text */
