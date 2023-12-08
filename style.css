@@ -812,6 +812,8 @@ ul {
         font-size: 16px;
     }
 
+
+    /* footer */
     #footer-img {
         position: absolute;
         bottom: 229px;
@@ -821,7 +823,22 @@ ul {
         border: 1px solid white;
     }
 
+    .footer .grid {
+        flex-wrap: wrap;
+    }
 
+    #footer-img {
+        position: absolute;
+        bottom: 211px;
+        right: 31px;
+        width: 150px;
+        height: 150px;
+        border: 1px solid white;
+    }
+
+    .footer .grid .col-40 {
+        width: 100%;
+    }
 
 }
 
