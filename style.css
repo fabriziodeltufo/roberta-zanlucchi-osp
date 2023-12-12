@@ -627,7 +627,7 @@ ul {
     }
 
     .menu-open .header__menu {
-        height: 30vh;
+        height: 20vh;
     }
 
     .menu-open {
@@ -784,6 +784,10 @@ ul {
 
 /* ! 650 MEDIA QUERY */
 @media (max-width: 650px) {
+
+    .menu-open .header__menu {
+        height: 30vh;
+    }
 
     #chi-sono {
         width: 100%;
